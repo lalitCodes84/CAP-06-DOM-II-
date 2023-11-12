@@ -1,0 +1,75 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#parentDiv{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+body{
+    background-image: url(/Assets/Bmi\ Back\ Img.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+#inputDivs{
+   display: flex;
+   column-gap: 10px;
+   justify-content: center;
+   align-content: center;  
+}
+
+#mainDiv{
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: fit-content;
+    padding: 20px;
+    border: 3px solid black;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 30px -16px #ec1f26;
+    margin-top: 10vh;
+    
+    
+}
+
+input{
+    height: 50px;
+    width: auto;
+    border-top-color: black;
+    border-bottom-color:white;
+    border-left-color: white;
+    border-right-color: black;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+}
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button{
+    height: 40px;
+    width: 350px;
+    background: linear-gradient(#fcbc49, #fba01d);
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+#output{
+    text-align: center;
+    font-size: medium;
+    color:black;
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+    /* border-color: 1px solid black; */
+}
+
+
+#title{
+    text-align: center;
+    font-weight: bolder;
+}

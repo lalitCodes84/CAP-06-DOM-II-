@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmiCalculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+</head>
+<body>
+    <!-- heading section -->
+    <h1 id="title">BMI CALCULATOR</h1>
+     <!-- Prent Div section -->
+   <div id="parentDiv">
+    <!-- Main div section -->
+    <div id="mainDiv">
+         <div id="inputDivs">
+             <input id="height" type="number" placeholder="Enter Your Height(m)">
+             <input id="weight" type="number" placeholder="Enter Your Weight(KG's)">
+         </div>
+         <div id="buttonDiv">
+             <button id="btn" onclick="calcBtn()">Calculate BMI</button>
+         </div>
+         <!-- Display output section -->
+         <h1 id="output"></h1>
+    </div>
+   </div>
+
+</body>
+</html>
+<script>
+    let result=document.getElementById("output");
+    let height=document.getElementById("height");
+    let weight=document.getElementById("weight");
+    let calcBtn=document.getElementById("btn");
+
+    calcBtn.addEventListener("click",function(){
+        let bmi=Number(weight.value)/Number(height.value*height.value);
+        if(bmi<=18.4){
+            result.innerText=`Underweight : Your bmi is ${bmi.toFixed(2)}`;
+        }else if(bmi >= 18.5 && bmi <= 24.9){
+            result.innerText=`Normal Weight : Your bmi is ${bmi.toFixed(2)}`;
+        }else if(bmi >= 25 && bmi <= 29.9){
+            result.innerText=`OVER WEIGHT : Your bmi is ${bmi.toFixed(2)}`
+        }else if(bmi >= 30){
+            result.innerText=`Obese : Your bmi is ${bmi.toFixed(2)}`
+        }
+
+    })
+
+
+
+</script>
