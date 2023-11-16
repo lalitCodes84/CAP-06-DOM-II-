@@ -1,0 +1,107 @@
+body{
+    margin: auto;
+    justify-content: center;
+    background-color: #677783;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* container section where all elements are present */
+
+#container{
+    background-color: #ededed;
+    border: 1px solid black;
+    width: 25%;
+    height: fit-content;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+/* Parent div section of leaderboard calculator css */
+
+#parent{
+    background-color: #677783;
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid black;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Min max section css */
+
+.range{
+    background-color: #677783;
+    border: 1px solid black;
+    margin: auto;
+    width: 40%;
+    height: 8vh;
+}
+
+/* score input container section css */
+
+.scoreCont{
+    display: flex;
+    background-color: #677783;
+    width:90%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+.score{
+    background-color: white;
+    border:  1px solid black;
+    width: 60%;
+    height: 8vh;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+/* button container section css */
+
+#btnCont{
+    background-color: #677783;
+    border: 1px solid black;
+    width: 90%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin: auto;
+    margin-top: 5%;
+}
+.btn:hover{
+    background-color: white;
+}
+
+/* All button css section */
+
+.btn{
+    background-color: rgb(65, 63, 63);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 80%;
+    height: 8vh;
+    margin: 10%;
+    border-radius: 50px;
+}
+
+/* Min max bg color section css */
+
+.min{
+    background-color: yellow;
+}
+.max{
+    background-color: red;
+}

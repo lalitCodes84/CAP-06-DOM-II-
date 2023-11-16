@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaderBoard.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+
+    <!-- Heading section of leaderboard html -->
+
+    <h1>LEADERBOARD</h1>
+    <div id="container">
+        <div id="parent">
+            <div class="range min">0</div>
+            <div class="range max">1</div>
+        </div>
+
+        <!-- Score input section html -->
+
+        <div class="scoreCont">
+            <input class="score" placeholder="Enter any Number"></input>
+        </div>
+
+        <!-- Button section html codes -->
+
+        <div id="btnCont">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">0</button>
+            <button class="btn enterBtn">Enter</button>
+            <button class="btn clear">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let btns=document.getElementsByClassName("btn");
+
+    for(let i=0; i<btns.length; i++){
+        let min=document.querySelector(".min");
+        let max=document.querySelector(".max");
+        btns[i].addEventListener('click',function(){
+            let score=document.querySelector(".score");
+    
+            switch(btns[i].innerText){
+
+                case "1":
+                    score.value+=btns[i].innerText;
+                    return;
+                case "2":
+                    score.value+=btns[i].innerText;
+                    return;
+                case "3":
+                    score.value+=btns[i].innerText;
+                    return;    
+                case "4":
+                    score.value+=btns[i].innerText;
+                    return;  
+                case "5":
+                    score.value+=btns[i].innerText;
+                    return;  
+                case "6":
+                    score.value+=btns[i].innerText;
+                    return; 
+                case "7":
+                    score.value+=btns[i].innerText;
+                    return;
+                case "8":
+                    score.value+=btns[i].innerText;
+                    return;
+                case "9":
+                    score.value+=btns[i].innerText;
+                    return;  
+                case "0":
+                    score.value+=btns[i].innerText;
+                    return;
+                case "Enter":
+                    if(Number(score.value)<Number(min.innerText) || Number(min.innerText==0)){
+                    min.innerText=score.value;
+                    }
+                    else if(Number(score.value)>Number(max.innerText)){
+                        max.innerText=score.value;
+                    }else{
+                        score.value=0;
+                    }
+                case "Clear":
+                    score.value=0;
+                    return;
+            }
+        })
+    }
+
+</script>
